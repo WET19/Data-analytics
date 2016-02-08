@@ -1,0 +1,12 @@
+>>>import sys
+>>> import pymongo
+>>> from pymongo import MongoClient
+>>> client=MongoClient()
+>>> db=client.test
+>>> movieCollection=db.movies
+>>> S='2001: A Space Odyssey'
+>>> for item in db.movies.find({'Title':{'$regex':S}}):
+print item["MovieID"]
+924
+>> for item in db.tags.find({"MovieID":"924","UserID":"146"}):
+	print item["Tag"]	
