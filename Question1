@@ -1,0 +1,17 @@
+Q1:	What genre is the movie CopyCat in?
+
+db.movies.find({"Title":"Copycat (1995)"}).pretty()
+{
+	"_id" : ObjectId("56b7ce6f58e55dcc0803d5a3"),
+	"MovieID" : "22",
+	"Title" : "Copycat (1995)",
+	"Genres" : [
+		"Crime",
+		"Drama",
+		"Horror",
+		"Mystery",
+		"Thriller"
+	]
+}
+
+
