@@ -1,0 +1,10 @@
+db.ratings.insert({
+	"UserID" : "36",
+	"MovieID" : "1020",
+	"Rating" : "4",
+	"Timestamp" : "1049772929"
+})
+
+db.ratings.find({UserID: '36', MovieID:'1020'})
+
+db.ratings.remove({UserID: '36', MovieID:'1020'})
