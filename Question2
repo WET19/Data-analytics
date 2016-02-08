@@ -1,6 +1,8 @@
 Q2:what genre has the most movies?
 
+In this question, we need to find all genre of movies, but as we can see that all records have the following format:
 {"MovieID":"2","Title":"Jumanji (1995)","Genres":["Adventure","Children","Fantasy"]}
+So, at first we need to implement java programing to count the number
 
 
 import com.mongodb.MongoClient;
